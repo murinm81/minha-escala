@@ -2,6 +2,8 @@
 
 Aplicativo em português para planejar escalas 5x2 e 6x1, com jornadas individuais, setores, folgas conjuntas, pessoas de apoio, férias e mínimos por setor em datas especiais.
 
+**Acesse o aplicativo:** https://murinm81.github.io/minha-escala/
+
 ## Usar
 
 Abra o endereço publicado no GitHub Pages ou baixe esta pasta e abra `index.html` no navegador. O aplicativo não exige instalação nem servidor de aplicação.

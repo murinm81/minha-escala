@@ -1,0 +1,97 @@
+MINHA ESCALA — APLICATIVO LOCAL
+
+Abra index.html com Chrome, Edge ou Firefox. Não precisa instalar nem ter internet.
+
+1. Revise o cadastro de cada funcionário em Editar.
+2. Escolha a segunda-feira inicial e o período.
+3. Clique em Gerar escala. Clique em qualquer célula para ajustar o dia.
+4. Confira os alertas. Exporte CSV, imprima ou salve PDF pelo navegador.
+5. Use Salvar backup regularmente. Restaurar backup permite transferir os dados.
+
+Os dados ficam no armazenamento do navegador deste computador. Mantenha a pasta
+no mesmo local e use o mesmo navegador. Backups são arquivos JSON.
+
+REGRAS E SUPOSIÇÕES
+- Todos começam em 5x2. Os regimes individuais podem ser alterados.
+- 5x2 significa duas folgas em cada semana de segunda a domingo; as folgas
+  não precisam ser consecutivas. Sequências acima de seis dias são alertadas.
+- 6x1 é semanal. A opção 5x1 exige ajuste manual: não há motor de ciclo contínuo.
+- Folgas conjuntas formam grupos transitivos. Aline + Túlio; Eurides (Dida)
+  + João + Analu + Anderson. Dida foi considerada Eurides: confirmar no cadastro.
+- Gabriel, Victor e Richarlyson podem folgar juntos; isso não foi imposto.
+- Folgas fixas não tiveram os dias informados e devem ser cadastradas.
+- O gerador distribui folgas buscando equilibrar o total de ausentes, sem
+  garantir cobertura mínima ou presença simultânea por setor.
+- Revezamento: cadastre a alternativa de saída cedo em cada dia. A saída alterna
+  a cada semana por grupo. Os horários reais de vários funcionários não foram
+  informados e os horários sugeridos precisam ser conferidos.
+- Analu tem preferência de domingo no primeiro domingo disponível de cada mês dentro do período.
+- A indicação de aprendiz é cadastral: não aplica automaticamente limites legais,
+  restrições etárias, trabalho noturno ou regras contratuais.
+- Cargas e intervalos não informados receberam sugestões editáveis. Ana Júlia,
+  Ágatha e os aprendizes exigem especial conferência das jornadas informadas.
+- Alterar o cadastro não modifica a escala existente. Gere novamente para aplicar
+  as novas regras. A geração substitui edições manuais após confirmação.
+- O programa é uma ferramenta de planejamento, sem validação trabalhista automática.
+
+ATUALIZAÇÃO — APOIOS E FÉRIAS
+- Em Pessoas de apoio, Walter, Eliezer e Elizangela estão pré-cadastrados sem
+  disponibilidade presumida. Edite o setor e clique em + Disponibilidade.
+- Informe início/fim do período, dias da semana, entrada, saída e intervalo.
+  Para um único dia, repita a data. Vários períodos ou horários são permitidos,
+  mas horários sobrepostos da mesma pessoa são rejeitados.
+- A escala mostra os horários como apoio disponível. A quantidade de apoios
+  aparece separada da equipe fixa e não garante cobertura integral do dia.
+- Em Férias, selecione a pessoa e o primeiro/último dia, ambos inclusive.
+  Também é possível registrar férias de pessoas de apoio, editar ou remover.
+- O bloqueio aparece imediatamente, sem gerar novamente. Os turnos anteriores
+  são preservados e reaparecem se as férias forem removidas.
+- Turnos que avançariam sobre o início das férias são bloqueados por inteiro.
+- Férias individuais não obrigam o restante do grupo de folga a se ausentar.
+- Semanas com férias não são comparadas à carga semanal integral ou à quantidade
+  normal de folgas; não há cálculo automático de carga proporcional.
+- Apoios e férias estão incluídos no backup e no CSV. Backups antigos continuam
+  compatíveis e recebem os três apoios iniciais, sem períodos de férias.
+- Se o aplicativo estiver aberto, atualize a página para carregar esta versão.
+
+CARGA HORÁRIA SEMANAL
+- Na tela principal, selecione o funcionário no menu Carga horária semanal.
+- O campo mostra a carga atual. Digite o novo valor e clique em Salvar carga semanal.
+- O valor é salvo no mesmo cadastro e incluído no backup e no CSV.
+- A conferência de horas é atualizada imediatamente. Alterar a carga não muda
+  automaticamente a entrada, a saída ou o intervalo dos turnos.
+
+ATUALIZAÇÃO — REGRAS OBRIGATÓRIAS E DATAS ESPECIAIS
+As regras desta seção substituem as orientações anteriores sobre domingos,
+limites de sequências e cobertura nas datas cadastradas.
+- Na seção Domingos, escolha o perfil de cada funcionário. O programa não deduz
+  esse perfil pelo nome: não informado usa 2 domingos/mês e intervalo quinzenal.
+- Mulher: mínimo de 2 domingos por mês, sem trabalhar 2 domingos seguidos.
+- Homem: mínimo de 1 domingo por mês, sem trabalhar 3 domingos seguidos.
+- Para conferir o mês completo, selecione semanas que incluam todos os domingos
+  desse mês. Meses parciais recebem aviso e a cota é limitada aos domingos
+  presentes no trecho. Histórico adjacente salvo ajuda a conferir os intervalos.
+- Férias suspendem a contagem de sequências e são consideradas afastamento,
+  sem exigir reposição de domingos durante o afastamento.
+- Nunca são geradas 3 folgas regulares consecutivas nem mais de 6 dias de trabalho.
+  As verificações atravessam semanas e meses e usam histórico salvo disponível.
+- Em Feriados e datas importantes, cadastre data, motivo, setor e mínimo.
+  É possível cadastrar vários setores para a mesma data, editar ou remover.
+- A contagem é por pessoa com turno em algum momento do dia no setor exato
+  do cadastro. Não representa cobertura simultânea de todo o expediente.
+  Funções combinadas, como Caixa e atendimento, são um setor próprio.
+- Apoios são opcionais na contagem, uma vez por pessoa disponível. Férias
+  sempre são excluídas. A cobertura não transfere pessoas entre setores.
+- A geração busca uma combinação que cumpra as regras. Se não encontrar, não
+  substitui a escala anterior. A busca tem limite de tempo e combinações:
+  atingir o limite não significa que uma solução seja impossível.
+- Grupos com regimes incompatíveis ou ciclo 5x1 devem ser revisados antes
+  da geração. O gerador atual atende os regimes semanais 5x2 e 6x1.
+- Edições manuais que criam nova infração de domingos, sequências ou mínimos
+  cadastrados são bloqueadas. Infrações de escala antiga aparecem em alertas.
+- Alterações de perfil, férias, cadastro e mínimos atualizam os alertas;
+  use Gerar escala para reorganizar os turnos e as folgas.
+- Estas regras não substituem a verificação da convenção coletiva aplicável.
+  Referências consultadas: CLT art. 386 e Lei 10.101/2000 art. 6º:
+  https://www2.camara.leg.br/legin/fed/lei/2000/lei-10101-19-dezembro-2000-353953-normaatualizada-pl.html
+  https://portal.trt3.jus.br/internet/conheca-o-trt/comunicacao/noticias-institucionais/trt-da-3a-regiao-aprecia-o-tema-n-42-de-irdr

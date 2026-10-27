@@ -1,0 +1,7 @@
+# Backups de dados e arquivos locais não fazem parte da publicação.
+backup-*.json
+*.csv
+*.log
+.env
+.env.*
+node_modules/
